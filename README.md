@@ -13,7 +13,7 @@ This project will display the following techniques to meet project expectations-
 
 ## Media Queries
 
--Show 3 (requirement was 2.) different Media queries for different device types/screen resolutions (phone, table, and traditional computer screens) 
+1. Show 3 (requirement was 2.) different Media queries for different device types/screen resolutions (phone, table, and traditional computer screens) 
 
 ## CSS Features
 
