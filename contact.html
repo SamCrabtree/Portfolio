@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam Crabtree - Contact</title>
+    <title>Sam Crabtree</title>
     <link rel="stylesheet" href="styles/normal.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        
         <nav>
-            <ul class="menu">
-                <li class="logo navi"><a href="index.html">Sam Crabtree</a></li>
+
+            <ul class="menu container">
                 <li class="navi link"><a href="about.html">About</a></li>
-                <li class="navi">|</li>
+                <li class="navi spacer">|</li>
                 <li class="navi link"><a href="resume.html">Resume</a></li>
-                <li class="navi">|</li>
-                <li class="navi link active"><a href="#">Contact</a></li>
+                <li class="navi spacer">|</li>
+                <li class="logo link navi">Sam Crabtree</li>
+                <li class="navi spacer">|</li>
+                <li class="navi link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="navi spacer">|</li>
+                <li class="navi link active"><a href="contact.html">Contact</a></li>
+
             </ul>
         </nav>
-        </div>
+       
     </header>
 
     <main>
+        <div class="wrapper">
+            <form>
+                <h1>Drop a Line!</h1><br/>
+                <label class="description" for="name">Name</label><br/>
+                <input id="name" name="contact"><br/>
+                <label class="description"for="email">Email</label><br/>
+                <input type="email" id="email" name="email"><br/>
+                <label class="description" for="comment">Comment/Request</label><br/>
+                <textarea id="comment" name="comment"></textarea><br/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
     </main>
 
