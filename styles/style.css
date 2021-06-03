@@ -17,12 +17,10 @@ header{
     background-color: slategray;
 }
 
-main{
 
-}
 
 form {
-    margin: 10px auto;
+    margin: auto;
    
 }
 
@@ -35,6 +33,9 @@ textarea{
     margin-bottom: 1em;
 }
 
+img{
+    width:100%;
+}
 /*BEGIN CLASS SETTINGS*/
 
 
@@ -45,12 +46,11 @@ textarea{
 
 }
 .wrapper {
-    
+    width:100%;
     margin: auto;
     display: flex;
 }
-.container{
-}
+
 
 .link{
     font-size: 1rem;
@@ -64,6 +64,7 @@ textarea{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .logo{
@@ -112,6 +113,26 @@ textarea{
 
 
 
+#portfolio{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    
+}
+.project img{
+    margin-bottom: 1em;
+}
+.project{
+    width: 80%;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: blueviolet;
+    justify-content: center;
+    margin: 1.5em;
+}
 
 /*MEDIA QUERIES*/
 
@@ -136,6 +157,22 @@ textarea{
     .logo{
         order: 0;
     }
+   
+    #portfolio{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project{
+        max-width: 20%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 1em;
+    }
+
 }
 
 
@@ -163,6 +200,22 @@ only screen and (min-width:700px) and (orientation: landscape){
 .logo{
     order: 0;
 }
+
+#portfolio{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project{
+    width: 45%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1em;
+}
+
 
 }
 /*Dark Theme Settings*/
