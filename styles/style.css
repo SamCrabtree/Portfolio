@@ -9,6 +9,8 @@ html{
 
 body{
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; 
+    background-image: url("../media/img/daniel-norris-l1kZD3_dySY-unsplash.jpg");
+
 }
 
 header{
@@ -19,10 +21,7 @@ header{
 
 
 
-form {
-    margin: auto;
-   
-}
+form 
 
 input {
     
@@ -35,6 +34,15 @@ textarea{
 
 img{
     width:100%;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(128,128,128,0.9);
+    margin-top: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 /*BEGIN CLASS SETTINGS*/
 
@@ -112,6 +120,20 @@ img{
 }
 
 
+.bio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128,128,128,0.9);
+    margin: auto;
+    width: 95%;
+}
+
+.section{
+    margin:auto;
+    width:80%;
+}
+
+
 
 #portfolio{
     margin: auto;
@@ -132,6 +154,14 @@ img{
     background-color: blueviolet;
     justify-content: center;
     margin: 1.5em;
+}
+
+
+#contact{
+        margin: auto;
+        background-color: rgba(128,128,128,0.9);
+        width:80%;
+        padding:1em;
 }
 
 /*MEDIA QUERIES*/
@@ -158,6 +188,29 @@ img{
         order: 0;
     }
    
+    .bio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        align-content: space-around;
+        align-items: flex-start;
+    
+        max-width: 1000px;
+        
+    }
+    
+    .section{
+        margin: 1em auto;
+        width:40%;
+        align-items: flex-start;
+    
+    }
+    
+    .section img{
+        padding-top: 1.5em;
+    }
+
     #portfolio{
         margin: auto;
         width: 100%;
@@ -167,12 +220,25 @@ img{
         justify-content: center;
     }
     .project{
-        max-width: 20%;
+        max-width: 25%;
         flex-wrap: wrap;
         text-align: center;
         margin: 1em;
     }
+    .filler{
+        max-width: 25%;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 1em;
+  
+    }
 
+    #contact{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 
@@ -201,6 +267,30 @@ only screen and (min-width:700px) and (orientation: landscape){
     order: 0;
 }
 
+.bio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    
+}
+
+.section{
+    margin: 1em auto;
+    width:40%;
+    align-items: flex-start;
+
+}
+
+.section img{
+    padding-top: 1.5em;
+}
+
+
+
 #portfolio{
     margin: auto;
     width: 90%;
@@ -210,6 +300,13 @@ only screen and (min-width:700px) and (orientation: landscape){
     justify-content: center;
 }
 .project{
+    width: 45%;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1em;
+}
+
+.filler{
     width: 45%;
     flex-wrap: wrap;
     text-align: center;
