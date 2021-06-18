@@ -7,33 +7,43 @@
     <title>Sam Crabtree</title>
     <link rel="stylesheet" href="styles/normal.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
-        
+       
         <nav>
 
+            <div class="topNavigation">
+                <div class= "mobile">
+                <a id="mobile_logo" class="logo"href="index.html">Sam Crabtree</a>
+                <a href="javascript:void(0);" class="menuIcon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+            <div id="menu_items">
             <ul class="menu container">
                 <li class="navi link active"><a href="about.html">About</a></li>
                 <li class="navi spacer">|</li>
                 <li class="navi link"><a href="resume.html">Resume</a></li>
                 <li class="navi spacer">|</li>
-                <li class="logo link navi">Sam Crabtree</li>
+                <li id="logo" class="logo link navi"><a href="index.html">Sam Crabtree</a></li>
                 <li class="navi spacer">|</li>
                 <li class="navi link"><a href="portfolio.html">Portfolio</a></li>
                 <li class="navi spacer">|</li>
                 <li class="navi link"><a href="contact.html">Contact</a></li>
-
+            </div>
             </ul>
-        </nav>
-       
-    </header>
 
+            </div>
+        </nav>
+      
+    </header>
     <main>
         <div class="wrapper">
             <div class="bio">
                 <div class="section">
-                    
                     <img src="https://via.placeholder.com/250x300">
                 </div>
                 <div class="section">
@@ -53,8 +63,7 @@
     </main>
 
     <footer>
-        <p> &copy;2021 Sam Crabtree  <br/>Background Photo by <a href="https://unsplash.com/@danielnorris?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Norris</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </p>
+        <p> &copy;2021 Sam Crabtree</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
