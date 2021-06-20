@@ -1,0 +1,244 @@
+/*IMPORT OF WEB FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+body{
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+header{
+margin-top: 0;
+padding: .5em;
+border: black solid 2px; 
+}
+
+main{
+padding: 1em;
+}
+
+footer{
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Nothing You Could Do', cursive;
+
+}
+
+
+/* WRAPPER SETTINGS */
+
+#wrapper{
+    
+    margin: .5em;
+    margin-top: 0;
+    
+}
+
+/* MENU SETTINGS */
+
+#menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding:.25em;
+
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+.link a:hover{
+    color:green;
+}
+
+.logo a:hover{
+    color:black;
+}
+
+.nav{
+   
+    list-style: none;
+    margin: auto;
+    padding:.25em;
+    text-align: center;
+    min-width: 100px;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+.logo{
+    font-size: 1.5em;
+    order:-1;
+}
+
+.logo a{
+    text-decoration:none;
+    color: black;
+}
+
+.active a{
+    color: red;
+}
+
+.menuIcon{
+    text-align: center;
+    color: black;
+    margin: .2em;
+}
+
+
+
+/* FLEXBOX CONTENT SETTINGS */
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+    
+    justify-content: center;
+}
+
+.item{
+    width: 80%;
+    text-align:center;
+    margin: auto;
+    padding: 0;
+    border: black 2px solid;
+}
+
+
+
+/*BEGIN MEDIA QUERIES*/
+
+
+/* START TABLET STYLES */
+
+
+@media screen and (min-width: 481px) and (max-width: 768px),
+only screen and (min-width:700px) and (orientation: landscape){
+
+    /* MENU SETTINGS */
+
+    header{
+        border-radius: 5px;   
+    }
+    
+    #menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        max-width: 1000px;
+    }
+
+    .logo{
+        order:0;
+    }
+
+    .menuIcon{
+        display: none;
+    }
+
+    /* FLEXBOX CONTENT SETTINGS */
+
+    .box{
+        flex-direction:row;
+    }
+
+    .item{
+        width: 45%;
+        margin:.25em;
+    }
+
+
+}
+
+/* START DESKTOP STYLES */
+@media screen and (min-width:769px) {
+
+    /* MENU SETTINGS */
+
+    header{
+        border-radius: 5px;   
+    }
+
+    #menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: none;
+        max-width: 1000px;
+    }
+
+    .logo{
+        order:0;
+    }
+
+    .menuIcon{
+        display: none;
+    }
+
+    /* FLEXBOX CONTENT SETTINGS */
+
+    .box{
+        flex-direction:row;
+    }
+
+    .item{
+        width: 45%;
+        margin:.25em;
+    }
+
+}
+
+/* START DARK MODE SETTINGS */
+
+@media (prefers-color-scheme: dark){
+
+    /* COLOR SETTINGS ONLY */
+body{
+    color: white;
+    background-color: black;
+    
+}
+
+img{
+    filter: brightness(.8) contrast(1.2);
+}
+
+.active{
+    color:blueviolet;
+}
+
+.menuIcon{
+    color: white;
+}
+
+.link a{
+    color:white;
+    
+}
+
+.link a:hover{
+    color:green;
+    
+}
+
+.logo a {
+    color: white;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+.active a{
+    color:blueviolet;
+}
+
+}
