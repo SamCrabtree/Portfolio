@@ -24,6 +24,7 @@ footer{
 
 h1, h2, h3, h4{
     font-family: 'Nothing You Could Do', cursive;
+    
 
 }
 
@@ -86,6 +87,7 @@ h1, h2, h3, h4{
 
 .active a{
     color: red;
+    text-decoration: underline;
 }
 
 .menuIcon{
@@ -103,7 +105,6 @@ h1, h2, h3, h4{
     flex-direction: column;
     flex-wrap: wrap;
     margin:auto;
-    
     justify-content: center;
 }
 
@@ -111,6 +112,7 @@ h1, h2, h3, h4{
     width: 80%;
     text-align:center;
     margin: auto;
+    margin-bottom:5px;
     padding: 0;
     border: black 2px solid;
     border-radius: 15px;
@@ -121,17 +123,125 @@ h1, h2, h3, h4{
     text-align: center;
     width: 95%;
     margin: auto;
+    margin-bottom: 1em;
 }
 
 .content{
-    width: 60%;
+    width: 80%;
     margin:auto;
 }
+
+.content::first-letter{
+    font-size: 2em;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+}
+
+.content::first-line{
+    font-size: 1.2em;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+}
+
 /* IMAGE SETTINGS */
 
 .pic{
     border-radius: 50%;
+    border: black 3px solid;
+    margin-bottom: 1em;
 }
+
+
+
+/* TABLE SETTINGS */
+
+
+
+.table{
+    border: black 2px solid;
+    border-collapse: collapse;
+    margin-top: 1em;
+    width:90%;
+}
+
+
+
+.table tr:nth-child(2n+3){
+    background-color: #E8EAF6;
+   
+}
+
+.table th{
+    background-color: slategray;
+    border: black 2px solid;
+    font-family: 'Nothing You Could Do', cursive;
+    padding: .5em;
+
+}
+
+.table tr, td{
+    border: black 2px solid;
+}
+
+.table tr:hover{
+    background-color: yellow;
+}
+
+/* FORM SETTINGS */
+
+.form{
+    border: black 2px solid;
+    margin: auto;
+    margin-top: 1em;
+    padding:1em;
+    width:80%;
+    border-radius: 15px;
+    
+}
+ 
+.form h2{
+    text-align: center;
+}
+
+.form label{
+    font-weight: bold;
+    margin-bottom: .2em;
+}
+
+
+
+.form input, label, h2, select, textarea{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.form button{
+    display: block;
+    margin:auto;
+    margin-left: 10%;
+}
+
+.form input, select, textarea{
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form input:last-child{
+    margin-bottom: 1em;
+}
+
+.submit{
+    display: inline-block;
+    border-radius: 15px;
+    padding: .5em;
+    font-weight: bold;
+   }
+
+
+
+
+
 
 
 /*BEGIN MEDIA QUERIES*/
@@ -157,8 +267,16 @@ only screen and (min-width:700px) and (orientation: landscape){
         max-width: 1000px;
     }
 
+    .nav:hover{
+        transform: rotate(5deg);
+    }
+
     .logo{
         order:0;
+    }
+
+    .logo:hover{
+        transform: rotate(0deg);
     }
 
     .menuIcon{
@@ -174,6 +292,22 @@ only screen and (min-width:700px) and (orientation: landscape){
     .item{
         width: 45%;
         margin:.25em;
+    }
+
+    .item:nth-child(odd):hover{
+        transform: rotate(-1deg);
+    }
+
+
+    .item:nth-child(even):hover{
+        transform: rotate(1deg);
+    }
+
+
+    /* IMAGE SETTINGS */
+
+    .pic:hover{
+        transform: rotate(10deg);
     }
 
 
@@ -189,6 +323,11 @@ only screen and (min-width:700px) and (orientation: landscape){
         border-radius: 5px;   
     }
 
+    .nav:hover{
+        transform: rotate(5deg);
+    }
+
+
     #menu{
         display: flex;
         flex-direction: row;
@@ -198,6 +337,10 @@ only screen and (min-width:700px) and (orientation: landscape){
 
     .logo{
         order:0;
+    }
+
+    .logo:hover{
+        transform: rotate(0deg);
     }
 
     .menuIcon{
@@ -211,12 +354,23 @@ only screen and (min-width:700px) and (orientation: landscape){
     }
 
     .item{
-        width: 45%;
+        width: 23%;
         margin:.25em;
     }
 
+    .item:nth-child(odd):hover{
+        transform: rotate(-1deg);
+    }
+
+
+    .item:nth-child(even):hover{
+        transform: rotate(1deg);
+    }
+
+   /* IMAGE SETTINGS */ 
+
     .pic:hover{
-        transform: rotate(60deg);
+        transform: rotate(10deg);
     }
 
 }
@@ -273,6 +427,44 @@ img{
 
 .item{
     background-color: #404040;
+}
+
+.pic{
+    border: #FFFFFF 3px solid;
+} 
+
+.table th{
+    color:#03DAC6;
+    background-color: #404040;
+}
+
+.table tr{
+    background-color:#FFFFFF;
+    color: black;
+}
+.table tr:nth-child(2n+3){
+    background-color:#404040;
+    color: #FFFFFF;
+}
+
+.table tr:hover{
+    background-color: #CF6679;
+    color: #ffffff;
+}
+
+
+.form{
+    border-color: #ffffff;
+}
+
+.submit{
+    background-color:#03DAC6;
+    color:black;
+}
+
+.clear{
+    background-color: #CF6679;
+    color:black;
 }
 
 }

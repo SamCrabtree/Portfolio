@@ -6,70 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Crabtree</title>
     <link rel="stylesheet" href="styles/normal.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-       
+        <a href="javascript:void(0);" class="menuIcon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         <nav>
-
-            <div class="topNavigation">
-                <div class= "mobile">
-                <a id="mobile_logo" class="logo"href="index.html">Sam Crabtree</a>
-                <a href="javascript:void(0);" class="menuIcon" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-                </div>
-            <div id="menu_items">
-            <ul class="menu container">
-                <li class="navi link"><a href="about.html">About</a></li>
-                <li class="navi spacer">|</li>
-                <li class="navi link"><a href="resume.html">Resume</a></li>
-                <li class="navi spacer">|</li>
-                <li id="logo" class="logo link navi"><a href="index.html">Sam Crabtree</a></li>
-                <li class="navi spacer">|</li>
-                <li class="navi link"><a href="portfolio.html">Portfolio</a></li>
-                <li class="navi spacer">|</li>
-                <li class="navi link"><a href="contact.html">Contact</a></li>
-            </div>
+            <ul id="menu">
+                <li class="nav link"><a href="about.html">About</a></li>
+                <li class="nav link"><a href="resume.html">Resume</a></li>
+                <li class="nav logo"><a href="index.html">Sam Crabtree</a></li>
+                <li class="nav link"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav link"><a href="contact.html">Contact</a></li>
             </ul>
 
-            </div>
         </nav>
-      
+
     </header>
+
+
 
     <main>
  
-<div class="profile_pic">
-<img src="https://via.placeholder.com/250x250">
-</div>
+        <div class="center">
+            <img class="pic" src="https://picsum.photos/id/237/300/300">
+            <h2>Sam Crabtree</h2>
+        </div>
 
-<div class="flex">
-<div class="card">
-    <h1><a href="about.html">About</a></h1>
-    <p>Information about Sam and his proficiencies.</p>
-</div>
-<div class="card">
-    <h1><a href="resume.html">Resume</a></h1>
-    <p>Sam's professional resume.</p>
-</div>
-<div class="card">
-    <h1><a href="portfolio.html">Portfolio</a></h1>
-    <p>A collection of Sam's projects.</p>
-</div>
-<div class="card">
-    <h1><a href="contact.html">Contact</a></h1>
-    <p>Information on how to contact Sam.</p>
-</div>
-</div>
-
+        <div class="box">
+            <div class="item">
+                <h3>About</h3>
+                <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+                <p>Learn more about Sam</p>
+            </div>
+            <div class="item">
+                <h3>Resume</h3>
+                <i class="fa fa-university fa-5x" aria-hidden="true"></i>
+                <p>A list of Sam's Experience</p>
+            </div>
+            <div class="item">
+                <h3>Portfolio</h3>
+                <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+                <p>A Gallery of Sam's Work</p>
+            </div>
+            <div class="item">
+                <h3>Contact</h3>
+                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                <p>Get in Contact With Sam</p>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p> &copy;2021 Sam Crabtree</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
