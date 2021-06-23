@@ -28,19 +28,33 @@
     </header>
     <main>
         <div class="wrapper">
-            <form id="contact">
-                <div class="form">
-                <h1>Drop a Line!</h1><br/>
-                <label class="description" for="name">Name</label><br/>
-                <input type="text" id="name" name="contact"><br/>
-                <label class="description"for="email">Email</label><br/>
-                <input type="text" type="email" id="email" name="email"><br/>
-                <label class="description" for="comment">Comment/Request</label><br/>
-                <textarea id="comment" name="comment"></textarea><br/>
-                <button type="submit">Submit</button>
+            <form class="form">
+                <h2>Drop Me A Line!</h2>
+                <p>Interested in partnering with me or have a suggestion? Leave me a message!</p>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                
+                <label for="Email">Email</label>
+                <input type="email" name="Email">
+
+                <label for="reason">Reason For Contact</label>
+                <select name="reason">
+                    <option value="">--Please Select An Option--</option>
+                    <option value="employ">Employment Oppurtunity</option>
+                    <option value="question">Question</option>
+                    <option value="feedback">Comment/Complaint</option>
+                    <option value="solicitor">Business Oppurtunities</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea name="comments"></textarea>
+
+                <button type="submit" class="submit">Submit</button> 
+
+
             </form>
         </div>
-        </div>
+       
 
     </main>
 
