@@ -219,6 +219,7 @@ h1, h2, h3, h4{
     border-radius: 50%;
     border: black 3px solid;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .thumb{
