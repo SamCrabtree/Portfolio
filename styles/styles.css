@@ -24,8 +24,6 @@ footer{
 
 h1, h2, h3, h4{
     font-family: 'Nothing You Could Do', cursive;
-    
-
 }
 
 
@@ -58,6 +56,7 @@ h1, h2, h3, h4{
 
 .link a:hover{
     color:green;
+
 }
 
 .logo a:hover{
@@ -74,6 +73,8 @@ h1, h2, h3, h4{
     font-family: 'Nothing You Could Do', cursive;
     font-weight: bold;
 }
+
+
 
 .logo{
     font-size: 1.5em;
@@ -129,7 +130,7 @@ h1, h2, h3, h4{
     padding:0;
     margin:auto;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .title-r{
@@ -141,6 +142,7 @@ h1, h2, h3, h4{
     border-radius: 15px;
     background-color: #E8EAF6;
     margin-bottom: 1.5em;
+    text-align: center;
     
 }
 .item-r{
@@ -160,8 +162,14 @@ h1, h2, h3, h4{
     transform: scale(1.1);
 }
 
+.item-r h2{
+    text-decoration: underline;
+    margin-bottom: 1px;
+}
 
-
+.title-r h2{
+    text-decoration: underline;
+}
 
 .project{
     width: 80%;
@@ -277,7 +285,7 @@ h1, h2, h3, h4{
     
 }
  
-.form h2, p{ 
+.form h1, .form p{ 
     text-align: center;
 }
 
@@ -286,12 +294,14 @@ h1, h2, h3, h4{
     margin-bottom: .2em;
 }
 
-
-
-.form input, label, h2, select, textarea{
+.form input, .form label, .form h1, .form select, .form textarea{
     width: 80%;
     display: block;
     margin: auto;
+}
+
+.form label{
+    margin-bottom: .5em;
 }
 
 .form button{
@@ -300,7 +310,7 @@ h1, h2, h3, h4{
     margin-left: 10%;
 }
 
-.form input, select, textarea{
+.form input, .form select,.form textarea{
     margin-bottom: 1em;
     text-align: left;
 }
@@ -379,6 +389,14 @@ only screen and (min-width:700px) and (orientation: landscape){
 
     .item:nth-child(even):hover, .project:nth-child(even):hover{
         transform: rotate(1deg);
+    }
+
+    .item a{
+        color:black;
+    }
+
+    .test{
+        width:100%;
     }
 
     .project{
