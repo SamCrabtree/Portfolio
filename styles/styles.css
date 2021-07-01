@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 
 body{
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #262626;
     margin: 0;
+    font-size: 18px;
 }
 
 header{
 margin-top: 0;
 padding: .5em;
-border: black solid 2px; 
-background-color: #E8EAF6;
+background-color: #D0D0D0;
 }
 
 main{
@@ -22,8 +22,9 @@ footer{
     text-align: center;
 }
 
-h1, h2, h3, h4{
+h1{
     font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.25em;
 }
 
 
@@ -56,7 +57,7 @@ h1, h2, h3, h4{
 
 .link a:hover{
     color:green;
-
+    text-decoration: underline;
 }
 
 .logo a:hover{
@@ -70,7 +71,6 @@ h1, h2, h3, h4{
     padding:.25em;
     text-align: center;
     min-width: 100px;
-    font-family: 'Nothing You Could Do', cursive;
     font-weight: bold;
 }
 
@@ -79,6 +79,7 @@ h1, h2, h3, h4{
 .logo{
     font-size: 1.5em;
     order:-1;
+    font-family: 'Nothing You Could Do', cursive;
 }
 
 .logo a{
@@ -135,6 +136,7 @@ h1, h2, h3, h4{
 
 .title-r{
     width: 80%;
+    max-width: 70em;
     margin: auto;
     margin-bottom:5px;
     padding: 1em;
@@ -147,6 +149,7 @@ h1, h2, h3, h4{
 }
 .item-r{
     width: 80%;
+    max-width: 70em;
     margin: auto;
     margin-bottom:5px;
     padding: 1em;
@@ -199,6 +202,7 @@ h1, h2, h3, h4{
 
 .content{
     width: 80%;
+    max-width: 50em;
     margin:auto;
     margin-bottom: 2em;
 }
@@ -296,6 +300,7 @@ h1, h2, h3, h4{
 
 .form input, .form label, .form h1, .form select, .form textarea{
     width: 80%;
+    max-width: 50em;
     display: block;
     margin: auto;
 }
@@ -307,7 +312,11 @@ h1, h2, h3, h4{
 .form button{
     display: block;
     margin:auto;
-    margin-left: 10%;
+    width:80%;
+    max-width: 50em;
+    min-width: 40px;
+    background-color: #DF96FF;
+    
 }
 
 .form input, .form select,.form textarea{
@@ -323,7 +332,9 @@ h1, h2, h3, h4{
     display: inline-block;
     border-radius: 15px;
     padding: .5em;
+    margin: auto;
     font-weight: bold;
+    min-width: 40px;
    }
 
 
@@ -357,6 +368,7 @@ only screen and (min-width:700px) and (orientation: landscape){
 
     .nav:hover{
         transform: rotate(5deg);
+        
     }
 
     .logo{
@@ -436,8 +448,9 @@ only screen and (min-width:700px) and (orientation: landscape){
     }
 
     .nav:hover{
-        transform: rotate(5deg);
+        transform: scale(1.5);
     }
+
 
 
     #menu{
@@ -452,7 +465,7 @@ only screen and (min-width:700px) and (orientation: landscape){
     }
 
     .logo:hover{
-        transform: rotate(0deg);
+        transform: scale(1.5);
     }
 
     .menuIcon{
@@ -499,13 +512,13 @@ only screen and (min-width:700px) and (orientation: landscape){
 
     /* COLOR SETTINGS ONLY */
 body{
-    color: #FFFFFF;
-    background-color: #121212;
+    color: #DCDCDC;
+    background-color: #444444;
     
 }
 
 header{
-    background-color: #404040;
+    background-color: #333333;
 }
 
 img{
@@ -513,29 +526,30 @@ img{
 }
 
 .menuIcon{
-    color: #FFFFFF;
+    color: #DCDCDC;
 }
 
 .link a{
-    color: #FFFFFF;
+    color: #DCDCDC;
     
 }
 
 .link a:hover{
-    color:#BB86FC;
+    color:#E3AEFF;
+    
     
 }
 
 .logo a {
-    color: #FFFFFF;
+    color: #DCDCDC;
 }
 
 .logo a:hover {
-    color: #FFFFFF;
+    color: #DCDCDC;
 }
 
 .active a{
-    color:#03DAC6;
+    color:#55D6BE;
     text-decoration:underline;
 }
 
@@ -548,7 +562,7 @@ img{
 }
 
 .pic{
-    border: #FFFFFF 3px solid;
+    border: #DCDCDC 3px solid;
 } 
 
 .table th{
@@ -557,26 +571,26 @@ img{
 }
 
 .table tr{
-    background-color:#FFFFFF;
+    background-color:#DCDCDC;
     color: black;
 }
 .table tr:nth-child(2n+3){
     background-color:#404040;
-    color: #FFFFFF;
+    color: #DCDCDC;
 }
 
 .table tr:hover{
     background-color: #CF6679;
-    color: #ffffff;
+    color: #DCDCDC;
 }
 
 
 .form{
-    border-color: #ffffff;
+    border-color: #DCDCDC;
 }
 
 .submit{
-    background-color:#03DAC6;
+    background-color:#55D6BE;
     color:black;
 }
 
