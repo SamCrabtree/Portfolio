@@ -571,6 +571,10 @@ img{
     background-color: #404040;
 }
 
+.test {
+    color:white;
+}
+
 .table tr{
     background-color:#DCDCDC;
     color: black;
