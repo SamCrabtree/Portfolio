@@ -12,6 +12,7 @@ header{
 margin-top: 0;
 padding: .5em;
 background-color: #D0D0D0;
+box-shadow: 0 3px;
 }
 
 main{
@@ -109,7 +110,7 @@ h1{
     padding:0;
     margin:auto;
     justify-content: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .item{
@@ -138,10 +139,10 @@ h1{
     width: 80%;
     max-width: 70em;
     margin: auto;
-    margin-bottom:5px;
-    padding: 1em;
-    border: black 2px solid;
+    padding-left: 1em;
+    padding-right: 1em;
     border-radius: 15px;
+    box-shadow: 5px 5px #000000;
     background-color: #E8EAF6;
     margin-bottom: 1.5em;
     text-align: center;
@@ -153,10 +154,11 @@ h1{
     margin: auto;
     margin-bottom:5px;
     padding: 1em;
-    border: black 2px solid;
     border-radius: 15px;
     background-color: #E8EAF6;
     margin-bottom: 1em;
+    box-shadow: 5px 5px #000000;
+
 }
 
 
@@ -175,12 +177,10 @@ h1{
 }
 
 .project{
-    width: 80%;
+    width: 100%;
     text-align:center;
     margin: auto;
-    margin-bottom:5px;
-    padding: 0;
-    border: black 2px solid;
+    margin-bottom:15px;
     border-radius: 15px;
     background-color: #E8EAF6;
 }
@@ -228,18 +228,17 @@ h1{
 /* IMAGE SETTINGS */
 
 .pic{
-    border-radius: 50%;
+    border-radius: 15px;
     border: black 3px solid;
     margin-bottom: 1em;
     margin-top: 1em;
 }
 
 .thumb{
-    width:95%;
-    border-radius: 50%;
-    border: black 2px solid;
-    
+    width:100%;
+    border-radius: 15%;
     margin:auto;
+    border: black 3px solid;
 }
 
 
@@ -280,7 +279,7 @@ h1{
 /* FORM SETTINGS */
 
 .form{
-    border: black 2px solid;
+    
     margin: auto;
     margin-top: 1em;
     padding:1em;
@@ -312,10 +311,11 @@ h1{
 .form button{
     display: block;
     margin:auto;
+    margin-top: 1.5em;
     width:80%;
     max-width: 50em;
     min-width: 40px;
-    background-color: #DF96FF;
+    background-color: goldenrod;
     
 }
 
@@ -465,7 +465,7 @@ only screen and (min-width:700px) and (orientation: landscape){
     }
 
     .logo:hover{
-        transform: scale(1.5);
+        transform: scale(1);
     }
 
     .menuIcon{
@@ -519,6 +519,7 @@ body{
 
 header{
     background-color: #333333;
+    box-shadow: 0 2px black;
 }
 
 img{
@@ -558,7 +559,7 @@ img{
 }
 
 .item, .item-r, .title-r, .project{
-    background-color: #404040;
+    background-color: #333333;
 }
 
 .pic{
@@ -585,10 +586,6 @@ img{
 }
 
 
-.form{
-    border-color: #DCDCDC;
-}
-
 .submit{
     background-color:#55D6BE;
     color:black;
@@ -597,6 +594,10 @@ img{
 .clear{
     background-color: #CF6679;
     color:black;
+}
+
+.form button {
+    background-color: #DF96FF;
 }
 
 }
