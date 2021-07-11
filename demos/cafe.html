@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip Drop Cafe</title>
+    <link rel="stylesheet" href="styles/normal.css">
+
+    <style>
+
+        h4, p{
+            margin: .25em;
+        }
+
+        body{
+            padding: 0;
+            margin:0;
+            display: grid;
+            width: 100%;
+            gap: .5em;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        header{
+            grid-row: 1/2;
+            grid-column: 1/ -1;
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        main{
+            grid-row: 2/3;
+            grid-column: 1/ -1;
+            background-color: cadetblue;
+            padding: 1em;
+        }
+
+        aside {
+            grid-row: 3/4;
+            grid-column:  1/ -1;
+            background-color: yellow;
+            padding: 1em;
+        }
+
+        footer{
+            grid-row: 4/5;
+            grid-column: 1/-1;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1em;
+
+        }
+
+        .item{
+            background-color: red;
+            text-align: center;
+            padding: .25em;
+            
+        }
+
+        .thumb{
+            width: 95%;
+            margin-top: .25em;
+        
+            
+        }
+
+
+        @media screen and (min-width:769px) {
+          
+            body{
+            grid-template-columns: 1fr 2fr 1fr;
+    
+        }
+
+        header{
+            grid-row: 1/2;
+            grid-column: 1/ -1;
+        }
+
+        main{
+            grid-row: 2/3;
+            grid-column: 1/ -2;
+        }
+
+        aside {
+            grid-row: 2/3;
+            grid-column:  -2/ -1;
+        }
+
+        footer{
+            grid-row: 3/4;
+            grid-column: 1/-1;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Drip Drop Cafe</h1>
+    </header>
+    <main>
+        <h1>Menu</h1>
+        <h2>Drinks</h2>
+        <div class="menu">
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <h4>Drip Coffee</h4>
+                <p>$2.50</p>
+            </div>
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <div class="item">
+                <img class="thumb"src="https://images.unsplash.com/photo-1516486392848-8b67ef89f113?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            </div>
+        </div>
+        <h2>Breakfast</h2>
+        <div class="menu">
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+        </div>
+        <h2>Lunch</h2>
+        <div class="menu">
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+            <div class="item">
+                <img src="">
+            </div>
+        </div>
+    </main>
+    
+    <aside>
+        <p>Test 2</p>
+    </aside>
+    
+    <footer>
+        <p>&copy;2021 Drip Drop Cafe.<br> Designed by: Sam Crabtree</p>
+    </footer>
+</body>
+</html>
