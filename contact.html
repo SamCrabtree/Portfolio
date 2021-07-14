@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+   
+   
     <header>
         <a href="javascript:void(0);" class="menuIcon" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
@@ -26,35 +28,42 @@
         </nav>
 
     </header>
+
     <main>
         <div class="wrapper">
-            <form class="form">
+            <div class="center">
+                <span id="complete"></span>
+            </div>
+            <form class="form" id="contact">
                 <h1>Drop Me A Line!</h1>
                 <p>Interested in partnering with me or have a suggestion? Leave me a message!</p>
                 <label for="name">Name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name" required>
                 
                 <label for="Email">Email</label>
-                <input type="email" name="Email">
-
-                <label for="reason">Reason For Contact</label>
-                <select name="reason">
+                <input type="email" name="Email" id="email" onkeydown="validateEmail()" required>
+                <p id="valid1"> </p>
+                <label for="reason" >Reason For Contact</label>
+                <select name="reason" id="reason" required>
                     <option value="">--Please Select An Option--</option>
+                    <option value="solicitor">Business Oppurtunities</option>
+                    <option value="feedback">Comment/Complaint</option>
                     <option value="employ">Employment Oppurtunity</option>
                     <option value="question">Question</option>
-                    <option value="feedback">Comment/Complaint</option>
-                    <option value="solicitor">Business Oppurtunities</option>
                 </select>
-
                 <label for="comments">Comments</label>
-                <textarea name="comments"></textarea>
+                <textarea name="comments" id="comments" required></textarea>
 
-                <button type="submit" class="submit">Submit</button> 
+                <button type="submit" id="submit">Submit</button> 
 
 
             </form>
+
+
         </div>
-       
+       <script>
+           console.log(document.querySelector('#email').value);
+       </script>
 
     </main>
 
@@ -62,5 +71,6 @@
         <p> &copy;2021 Sam Crabtree</p>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 </html>

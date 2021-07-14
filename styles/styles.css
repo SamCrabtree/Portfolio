@@ -318,6 +318,8 @@ h1{
     max-width: 50em;
     min-width: 40px;
     background-color: goldenrod;
+    border-radius: 15px;
+    
     
 }
 
@@ -332,7 +334,6 @@ h1{
 
 .submit{
     display: inline-block;
-    border-radius: 15px;
     padding: .5em;
     margin: auto;
     font-weight: bold;
