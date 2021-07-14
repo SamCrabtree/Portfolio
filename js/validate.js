@@ -28,8 +28,8 @@ function validateEmail(){
 }
 
 
-let Name = document.getElementById('name').value;
-patronName = toString(patronName);
+const userName = document.getElementById('name').value;
+const patronName = userName;
 const patronEmail = document.getElementById('email').value;
 const patronReason = document.getElementById('reason').value;
 const patronComment = document.getElementById('comments').value;
@@ -38,7 +38,7 @@ const patronSubmit = document.getElementById('submission');
 
 mySubmit.addEventListener('click', function(event) {
     event.preventDefault();
-    document.getElementById("complete").innerHTML = `<h2>Thank you ${patronName}! </h2> <h3>The Following Message has been submitted:</h3> 
+    document.getElementById("display").innerHTML = `<h2>Thank you ${patronName}! </h2> <h3>The Following Message has been submitted:</h3> 
     <b>NAME:<b> ${patronName}<br />
     <b>EMAIL:<b> ${patronEmail}<br />
     <b>CONTACT REASON:<b> ${patronReason} <br />

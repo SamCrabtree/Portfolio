@@ -32,33 +32,37 @@
     <main>
         <div class="wrapper">
             <div class="center">
-                <span id="complete"></span>
+                <div id="display">            
+                    <form class="form" id="contact">
+                        <h1>Drop Me A Line!</h1>
+                        <p>Interested in partnering with me or have a suggestion? Leave me a message!</p>
+                       
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="email" onkeydown="validateEmail()" required>
+                        <p id="valid1"> </p>
+
+                        <label for="reason" >Reason For Contact</label>
+                        <select name="reason" id="reason" required>
+                            <option value="">--Please Select An Option--</option>
+                            <option value="solicitor">Business Oppurtunities</option>
+                            <option value="feedback">Comment/Complaint</option>
+                            <option value="employ">Employment Oppurtunity</option>
+                            <option value="question">Question</option>
+                        </select>
+
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" required></textarea>
+
+                        <button type="submit" id="submit">Submit</button> 
+
+
+                    </form>
+                </div>
             </div>
-            <form class="form" id="contact">
-                <h1>Drop Me A Line!</h1>
-                <p>Interested in partnering with me or have a suggestion? Leave me a message!</p>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                
-                <label for="Email">Email</label>
-                <input type="email" name="Email" id="email" onkeydown="validateEmail()" required>
-                <p id="valid1"> </p>
-                <label for="reason" >Reason For Contact</label>
-                <select name="reason" id="reason" required>
-                    <option value="">--Please Select An Option--</option>
-                    <option value="solicitor">Business Oppurtunities</option>
-                    <option value="feedback">Comment/Complaint</option>
-                    <option value="employ">Employment Oppurtunity</option>
-                    <option value="question">Question</option>
-                </select>
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments" required></textarea>
-
-                <button type="submit" id="submit">Submit</button> 
-
-
-            </form>
-
+            
 
         </div>
        <script>
