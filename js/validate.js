@@ -28,21 +28,26 @@ function validateEmail(){
 }
 
 
-const userName = document.getElementById('name').value;
-const patronName = userName;
-const patronEmail = document.getElementById('email').value;
-const patronReason = document.getElementById('reason').value;
-const patronComment = document.getElementById('comments').value;
 const mySubmit = document.getElementById('submit');
-const patronSubmit = document.getElementById('submission');
 
 mySubmit.addEventListener('click', function(event) {
+    
+
     event.preventDefault();
-    document.getElementById("display").innerHTML = `<h2>Thank you ${patronName}! </h2> <h3>The Following Message has been submitted:</h3> 
-    <b>NAME:<b> ${patronName}<br />
-    <b>EMAIL:<b> ${patronEmail}<br />
-    <b>CONTACT REASON:<b> ${patronReason} <br />
-    <b>MESSAGE:<b> ${patronComment} <br />
+   
+    const userName = document.getElementById('name').value;
+    const patronName = userName;
+    const patronEmail = document.getElementById('email').value;
+    const patronReason = document.getElementById('reason').value;
+    const messageReason = patronReason.toUpperCase();
+    const patronComment = document.getElementById('comments').value;
+    
+ 
+    document.getElementById("display").innerHTML = `<h2>Thank you ${patronName}!</h2> <h3>A message has been submitted with the following information:</h3> 
+    <b>NAME:<b> ${patronName}<br /><br />
+    <b>EMAIL:<b> ${patronEmail}<br /><br />
+    <b>CONTACT REASON:<b> ${messageReason} <br /> <br />
+    <b>MESSAGE:<b> ${patronComment}
     `;
     
 })

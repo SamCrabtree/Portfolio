@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 *Sam Crabtree's Personal Portfolio*
 
@@ -30,9 +30,11 @@ This project will display the following techniques to meet project expectations-
  
   This requirement has been met with the following features:
       
-       A. The portfolio.html page has a flexbox gallery of completed projects/assignments.
+       A. The portfolio.html page has a flexbox gallery of completed projects/assignments that changes layout and width depending on the width of screen.
       
-       B. The header/navigation menu across all html pages changes with media queries.  
+       B. The header/navigation menu across all html pages changes with media queries from rows to colums and re-arranges thee entries.
+
+       C. Under the demos the cafe.html page features multiple nested CSS Grids while organizing the cafe menu. 
 
 2. A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 
@@ -41,6 +43,8 @@ This project will display the following techniques to meet project expectations-
 ## Javascript Features
 
 1. Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow.
+
+  This requirement is met on the contact.html using the validate.js script. The primary goal is to validate that the email is in the corect format and then upon submission, the form is replaced with a demo of the form that has been submitted. 
 
 
 
