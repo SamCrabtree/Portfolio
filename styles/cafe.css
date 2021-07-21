@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Lato&display=swap');
+
+h4, p{
+    margin: .25em;
+}
+
+main h2{
+    font-family: 'Lato', sans-serif;
+    margin:2em;
+    text-decoration: underline;
+}
+
+aside h2{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: 'Aladin', cursive;
+}
+
+
+
+body{
+    padding: 0;
+    margin:0;
+    display: grid;
+    width: 100%;
+    gap: .5em;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    color: white;
+    grid-row: 1/2;
+    grid-column: 1/ -1;
+    text-align: center;
+    background-color: rgba(52, 52, 52, .90);
+}
+
+
+
+main{
+    text-align: center;
+    grid-row: 2/3;
+    grid-column: 1/ -1;
+    background-color: rgba(223, 223, 223, .75);
+    padding: 1em;
+
+}
+
+aside {
+    color: white;
+    grid-row: 3/4;
+    grid-column:  1/ -1;
+    background-color: rgba(95, 89, 128, .75);            padding: 1em;
+}
+
+footer{
+    color: white;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    text-align: center;
+    background-color: rgba(52, 52, 52, .75);
+}
+
+.menu{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+
+}
+
+.item{
+    color:white;
+    background-color: rgba(95, 89, 128, .80);             text-align: center;
+    padding: .25em;
+    border-radius: 10px;
+    
+}
+
+.thumb{
+    width: 95%;
+    margin-top: .5em; 
+    border-radius: 50%;  
+    border: 2px solid rgb(52, 52, 52);     
+}
+
+div.info{
+    text-align: center;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+
+a{
+    color: white;
+}
+
+.map{
+    width:80%;
+    border-radius: 10px;;
+}
+
+
+@media screen and (min-width:769px) {
+  
+html{
+    font-size: 25px;
+}
+
+
+body{
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+header{
+    grid-row: 1/2;
+    grid-column: 1/ -1;
+}
+
+main{
+    grid-row: 2/3;
+    grid-column: 1/ -2;
+}
+
+aside {
+    grid-row: 2/3;
+    grid-column:  -2/ -1;
+}
+
+footer{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+
+}
+
+
+}
