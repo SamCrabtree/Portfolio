@@ -52,6 +52,20 @@ This project will display the following techniques to meet project expectations-
 
 The following features included in this assignment are extra's and simply demonstrate techniques learned during class or from external sources:
 
-TBD
+## CSS Additional
 
+1. Import Bootstrap from a CDN, then use Bootstrap’s column system to organize content areas based on mobile or desktop views (cannot be used on the same page as the Flexbox/CSS Grid requirement above). Note: Bootstrap is an optional Treehouse video
+
+-This project requirement is fulfilled on on the "Storage" Page. Bootstrap was used as the main framework to organize the page. 
+
+2. Use “:nth-child” or “nth-of-type” to style a series of elements on your page - for example, change the background color for every other row in a table.
+
+-This project requirement is fulfilled by the table on the storage.html page and the storage.css file on row 66. Using the nth-child method to ensure every other row (except for the header row) alternates the color displayed. 
+
+
+## Javascript Additional
+
+1. Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page
+
+- This project is fulfilled by the Storage.html page in combination with the storage.js file. Using the variables contained in the JS file, the values are populated withing the table data cells upon page load. 
 
